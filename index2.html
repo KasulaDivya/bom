@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:url(./div.jpg);
+        }
+        div{
+            position: absolute;
+            border: 2px solid white;
+            width:30%;
+            height: 40%;
+            top:30%;
+            left:35%;
+            background:transparent;
+            backdrop-filter: blur(8px);
+        }
+        h1{
+            color: white;
+            font-weight: normal;
+        }
+        input{
+           background-color: transparent;
+           border: none;
+           border-bottom:1px solid white;
+           margin-left: 25%;
+           color: white;
+        }
+        p{
+            display: inline;
+        }
+        button{
+            border:none;
+            background-color: rgb(215, 76, 99);
+            color:white;
+            border-radius: 3px;
+            padding:5px;
+            width:30%;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <center><h1>Login</h1></center>
+        <input type="text" size="30%" placeholder="Email">
+        <br>
+        <br>
+        <br>
+        <input type="password" size="30%" placeholder="Password">
+        <br>
+        <br>
+        <input type="checkbox" > <p style="color:white">Remember me</p>
+        <br>
+        <br>
+       <center><button>Log-In</button></center>
+       <br>
+       <center><button>go back</button></center>
+    </div>
+    <script>
+        var a=document.getElementsByTagName("button")
+        a[0].addEventListener("click",fun)
+
+        function fun(){
+            window.location.assign("index1.html")
+            window.history.forward("index1.html")
+        }
+
+        a[1].addEventListener("click",fun2)
+
+        function fun2(){
+            window.location.assign("index21.html")
+            window.history.back("index21.html")
+        }
+
+
+
+    </script>
+    
+</body>
+</html>
